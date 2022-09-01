@@ -1,0 +1,105 @@
+:root{
+    --page-width: 1500px;
+    --box-border: solid rgba(0, 0, 0, 0.479) 8px;
+    --font-color: rgb(66, 63, 63);
+}
+
+@font-face{
+    font-family: FugazOne-Regular;
+    src: url(./fonts/FugazOne-Regular.ttf);
+    
+    
+}
+
+body{
+    font-family: FugazOne-Regular;
+    height: 100vh;
+    margin: 0 4rem;
+    display: flex;
+    background-color: #88888875;
+}
+
+.page-container{
+    margin: auto;
+    border-radius: 1rem;
+    flex-basis: var(--page-width);
+    display: flex;
+    flex-direction: column;
+    background-color: #88888875;
+    box-shadow: 1px 1px 10px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.players-container{
+    gap: 20rem;
+    display: flex;
+}
+
+h1, h2, button, .gamebox{
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2.5rem;    
+}
+
+
+
+.gameboard{
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.board-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px)
+}
+
+.gamebox{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-border{
+    border-left: var(--box-border);
+}
+
+.bottom-top-border{
+    border-bottom: var(--box-border);
+    border-top: var(--box-border);
+}
+
+.footer{
+    padding: 3rem 0;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 500px);
+    gap: 3rem;
+}
+
+button{
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    padding: 0.5rem 3rem;
+    font-family: FugazOne-Regular;
+    background-color: #88888875;
+}
