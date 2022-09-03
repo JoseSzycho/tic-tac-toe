@@ -1,5 +1,5 @@
 :root{
-    --page-width: 1500px;
+    --page-width: 1000px;
     --box-border: solid rgba(0, 0, 0, 0.479) 8px;
     --font-color: rgb(66, 63, 63);
 }
@@ -47,8 +47,7 @@ h1, h2, button, .gamebox{
 }
 
 h1{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
     font-size: 4rem;
 }
 
@@ -56,23 +55,21 @@ h2{
     font-size: 2.5rem;    
 }
 
-
-
 .gameboard{
     width: 100%;
-    padding: 4rem 0 4rem 0;
+    margin: 3rem;
     display: flex;
     justify-content: center; 
 }
 
 .board-grid{
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px)
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px)
 }
 
 .gamebox{
-    font-size: 5rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,18 +85,18 @@ h2{
 }
 
 .footer{
-    padding: 3rem 0;
+    margin-bottom: 2rem;
     width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fit, 400px);
     gap: 3rem;
 }
 
 button{
     border-radius: 0.4rem;
     font-size: 2rem;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem;
     font-family: FugazOne-Regular;
     background-color: #88888875;
 }
