@@ -57,9 +57,9 @@ h2{
 
 .gameboard{
     width: 100%;
-    margin: 3rem;
     display: flex;
     justify-content: center; 
+    margin: 3rem 0;
 }
 
 .board-grid{
@@ -100,3 +100,23 @@ button{
     font-family: FugazOne-Regular;
     background-color: #88888875;
 }
+
+button:hover{
+    box-shadow: 3px 3px 3px black;
+    border-color: black;
+    cursor: grab;
+}
+
+.gamebox:hover{
+    font-size: 4rem;
+    cursor: crosshair;
+}
+
+.turn::before{
+    content: "-> ";
+}
+
+.player-turn{
+    font-size: 3.2rem;
+}
+

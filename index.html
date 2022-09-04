@@ -12,27 +12,27 @@
         <div class="header">
             <h1>TIC-TAC-TOE</h1>
             <div class="players-container">
-                <h2>Player 1</h2>
-                <h2>Player 2</h2>
+                <h2 id="player-1" class="player-turn">Player 1</h2>
+                <h2 id="player-2">Player 2</h2>
             </div>
         </div>
         <div class="gameboard">
             <div class="board-grid">
-                <div class="gamebox bottom">1</div>
-                <div class="gamebox left-border">2</div>
-                <div class="gamebox left-border">3</div>
-                <div class="gamebox bottom-top-border">4</div>
-                <div class="gamebox left-border bottom-top-border">5</div>
-                <div class="gamebox left-border bottom-top-border">6</div>
-                <div class="gamebox">7</div>
-                <div class="gamebox left-border">8</div>
-                <div class="gamebox left-border">9</div>
+                <div class="gamebox bottom" position="00"></div>
+                <div class="gamebox left-border" position="01"></div>
+                <div class="gamebox left-border" position="02"></div>
+                <div class="gamebox bottom-top-border" position="10"></div>
+                <div class="gamebox left-border bottom-top-border" position="11"></div>
+                <div class="gamebox left-border bottom-top-border" position="12"></div>
+                <div class="gamebox" position="20"></div>
+                <div class="gamebox left-border" position="21"></div>
+                <div class="gamebox left-border" position="22"></div>
             </div>
         </div>
         <div class="footer">
-            <button>Start new game</button>
-            <button>Restart game</button>
+            <button id="restart">Restart game</button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
